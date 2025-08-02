@@ -168,14 +168,14 @@
                     <?php endif; ?>
 
 
-                    <!-- 8 PM Result -->
+                    <!-- 9 PM Result -->
                     <?php if (empty($resultArray['9pm-result'])): ?>
                     <a href="<?= base_url('admin/add-result?time=9pm') ?>"
                         class="current-date-result p-3 bg-outline-primary b-r-22">
                         <div class="pending-result">
                             <small class="badge text-light-danger">Pending</small>
                             <div class="text-primary fs-5">
-                                <span><i class="ti ti-plus"></i></span><span class="ms-2">Create 8 PM</span>
+                                <span><i class="ti ti-plus"></i></span><span class="ms-2">Create 9 PM</span>
                             </div>
                         </div>
                     </a>
@@ -203,7 +203,7 @@
                                 </label>
                             </div>
                             <div class="fs-5 text-primary">
-                                <span class="ms-2">8 PM Result</span>
+                                <span class="ms-2">9 PM Result</span>
                             </div>
                         </div>
 

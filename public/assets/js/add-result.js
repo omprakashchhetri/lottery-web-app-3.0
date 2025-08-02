@@ -2,10 +2,10 @@ $(document).ready(function () {
   var baseURL = jQuery("#appBaseUrl").val();
   // Get the URL parameter "time"
   const urlParams = new URLSearchParams(window.location.search);
-  const time = urlParams.get("time"); // e.g., '2pm' or '2pm'
+  const time = urlParams.get("time"); // e.g., '2pm' or '9pm'
   console.log(time);
 
-  if (time === "2pm" || time === "2pm") {
+  if (time === "2pm" || time === "9pm") {
     // Loop through radio inputs
     $(".form-selectgroup .select-input").each(function () {
       const labelText = $(this).val().toLowerCase();

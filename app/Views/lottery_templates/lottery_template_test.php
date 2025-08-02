@@ -232,7 +232,7 @@
 
     .section-img {
         position: absolute;
-        top: 5px;
+        top: 2px;
         left: -5px;
         z-index: 10;
         width: 74mm;
@@ -254,7 +254,7 @@
         position: absolute;
         background-color: #FAAF3A;
         height: 14mm;
-        top: 13px;
+        top: 10px;
         left: 60px;
         z-index: 5;
         width: 45mm;
@@ -266,7 +266,7 @@
         border-left: 0px solid transparent;
         border-right: 15px solid transparent;
         height: 0;
-        top: 17px;
+        top: 14px;
         left: 60px;
         z-index: 5;
         width: 55mm;
