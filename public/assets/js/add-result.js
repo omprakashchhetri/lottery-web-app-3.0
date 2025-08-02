@@ -2,10 +2,10 @@ $(document).ready(function () {
   var baseURL = jQuery("#appBaseUrl").val();
   // Get the URL parameter "time"
   const urlParams = new URLSearchParams(window.location.search);
-  const time = urlParams.get("time"); // e.g., '1pm' or '8pm'
+  const time = urlParams.get("time"); // e.g., '2pm' or '2pm'
   console.log(time);
 
-  if (time === "1pm" || time === "8pm") {
+  if (time === "2pm" || time === "2pm") {
     // Loop through radio inputs
     $(".form-selectgroup .select-input").each(function () {
       const labelText = $(this).val().toLowerCase();
@@ -71,7 +71,7 @@ $(document).ready(function () {
   // Section 2 Generator (5 digits, 10 numbers)
   $("#generateSection2").click(function () {
     usedNumbers.section2.clear(); // Clear previous numbers
-    const numbers = generateUniqueNumbers("section2", 10, 5);
+    const numbers = generateUniqueNumbers("section2", 15, 5);
 
     $(".section2-input").each(function (index) {
       if (index < numbers.length) {
@@ -83,7 +83,7 @@ $(document).ready(function () {
   // Section 3 Generator (4 digits, 10 numbers)
   $("#generateSection3").click(function () {
     usedNumbers.section3.clear(); // Clear previous numbers
-    const numbers = generateUniqueNumbers("section3", 10, 4);
+    const numbers = generateUniqueNumbers("section3", 20, 4);
 
     $(".section3-input").each(function (index) {
       if (index < numbers.length) {
@@ -95,7 +95,7 @@ $(document).ready(function () {
   // Section 4 Generator (4 digits, 10 numbers)
   $("#generateSection4").click(function () {
     usedNumbers.section4.clear(); // Clear previous numbers
-    const numbers = generateUniqueNumbers("section4", 10, 4);
+    const numbers = generateUniqueNumbers("section4", 20, 4);
 
     $(".section4-input").each(function (index) {
       if (index < numbers.length) {

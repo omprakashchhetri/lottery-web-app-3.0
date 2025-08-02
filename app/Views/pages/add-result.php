@@ -95,7 +95,7 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
-                                            <?php for($i = 1; $i <= 10 ; $i++) { ?>
+                                            <?php for($i = 1; $i <= 15 ; $i++) { ?>
                                             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text b-r-left text-bg-primary"
@@ -122,7 +122,7 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
-                                            <?php for($i=1; $i<=10;$i++) { ?>
+                                            <?php for($i=1; $i<=20;$i++) { ?>
                                             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text b-r-left text-bg-primary"
@@ -149,7 +149,7 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
-                                            <?php for($i=1; $i<=10;$i++) { ?>
+                                            <?php for($i=1; $i<=20;$i++) { ?>
                                             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text b-r-left text-bg-primary"

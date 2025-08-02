@@ -171,38 +171,38 @@ class Home extends BaseController
             ->getResult();
         
         $passToView = [
-            'title' => 'Old Results - Meghalaya State Lotteries',
-            'oldResults' => $oldResults
-        ];
-        
-        return view('templates/header', $passToView)
-            . view('pages/old-result')
-            . view('templates/footer');
-    }
-    
-    public function showImage($filename)
-    {
-        $filepath = WRITEPATH . 'uploads/' . $filename;
-        
-        if (file_exists($filepath)) {
-            $mime = mime_content_type($filepath);
-            
-            return $this->response
-                ->setHeader('Content-Type', $mime)
-                ->setBody(file_get_contents($filepath));
-        }
-        
-        throw new \CodeIgniter\Exceptions\PageNotFoundException();
-    }
-    
-    public function downloadPdf($filename)
-    {
-        $filepath = WRITEPATH . 'uploads/' . $filename;
-        
-        if (file_exists($filepath)) {
-            return $this->response->download($filepath, null);
-        }
-        
-        throw new \CodeIgniter\Exceptions\PageNotFoundException();
-    }
+            'title' => 'Old Results - '.ucwords(strtolower(STATENAME)).' State Lotteries',
+'oldResults' => $oldResults
+];
+
+return view('templates/header', $passToView)
+. view('pages/old-result')
+. view('templates/footer');
+}
+
+public function showImage($filename)
+{
+$filepath = WRITEPATH . 'uploads/' . $filename;
+
+if (file_exists($filepath)) {
+$mime = mime_content_type($filepath);
+
+return $this->response
+->setHeader('Content-Type', $mime)
+->setBody(file_get_contents($filepath));
+}
+
+throw new \CodeIgniter\Exceptions\PageNotFoundException();
+}
+
+public function downloadPdf($filename)
+{
+$filepath = WRITEPATH . 'uploads/' . $filename;
+
+if (file_exists($filepath)) {
+return $this->response->download($filepath, null);
+}
+
+throw new \CodeIgniter\Exceptions\PageNotFoundException();
+}
 }

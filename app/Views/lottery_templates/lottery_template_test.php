@@ -202,7 +202,7 @@
         font-family: "Arial Rounded MT Bold", sans-serif;
         font-style: normal;
         font-weight: 500;
-        line-height: 1.1;
+        line-height: 1;
         text-decoration: none;
         font-size: 18pt;
         width: 100%;
@@ -223,23 +223,23 @@
         border-radius: 14px;
         margin-top: 10px;
         position: relative;
-        min-height: 17mm;
+        min-height: 20mm;
     }
 
     .section-inner.green {
-        min-height: 16mm;
+        min-height: 26mm;
     }
 
     .section-img {
         position: absolute;
-        top: -5px;
+        top: 5px;
         left: -5px;
         z-index: 10;
         width: 74mm;
     }
 
     .green .section-img {
-        top: -1px;
+        top: 23px;
     }
 
     .section-img img {
@@ -254,7 +254,7 @@
         position: absolute;
         background-color: #FAAF3A;
         height: 14mm;
-        top: 2px;
+        top: 13px;
         left: 60px;
         z-index: 5;
         width: 45mm;
@@ -266,20 +266,20 @@
         border-left: 0px solid transparent;
         border-right: 15px solid transparent;
         height: 0;
-        top: 7px;
+        top: 17px;
         left: 60px;
         z-index: 5;
         width: 55mm;
     }
 
     .green .section-img-block {
-        top: 2px;
+        top: 24px;
     }
 
     .green .section-img-block-main {
         border-bottom: 13mm solid #d51717;
         width: 55mm;
-        top: 6px;
+        top: 28px;
     }
 
     .green .section-img-block-main.blue-col {
@@ -293,7 +293,7 @@
     .numbers-wrapper {
         float: right;
         width: calc(100% - 70mm);
-        line-height: 1.1;
+        line-height: 0.9;
         margin-top: -2.3mm;
         display: inline-flex;
         flex-wrap: wrap;
@@ -315,7 +315,7 @@
 
     .ad-image {
         width: 100%;
-        height: 64mm;
+        height: 47mm;
     }
 
     .fifth-price-header {
@@ -466,7 +466,7 @@
         position: absolute;
         color: #fff;
         right: 26mm;
-        top: 4mm;
+        top: 1mm;
         font-size: 31px;
     }
 
@@ -521,9 +521,9 @@
         }
 
         .green .section-img-block-main {
-            border-bottom: 13mm solid #d51717 !important;
+            border-bottom: 13mm solid #d51717;
             width: 55mm;
-            top: 6px;
+            top: 28px;
         }
 
         .green .section-img-block-main.blue-col {
@@ -554,10 +554,10 @@
 
         .section-inner {
             border: 2px solid rgb(149, 149, 255);
-            border-radius: 8px;
+            border-radius: 14px;
             margin-top: 10px;
             position: relative;
-            min-height: 17mm;
+            min-height: 20mm;
         }
 
         .section-inner.green {
@@ -672,7 +672,7 @@
         $today = new DateTime();
 
         // Target date
-        $targetDate = new DateTime('2025-08-27');
+        $targetDate = new DateTime('2025-09-15');
 
         // Calculate the difference
         $interval = $today->diff($targetDate);
@@ -807,7 +807,7 @@
                 </div>
             </div>
             <div class="ad-image-wrapper">
-                <!-- <span class="days-left-count"><?=$daysLeft?></span> -->
+                <span class="days-left-count"><?=$daysLeft?></span>
                 <img class="ad-image" src="<?=base_url('print-outs-09621/ad-section-678145874jkncvnq41.jpg')?>" alt="">
             </div>
             <h3 class="fifth-price-header">5th Prize Amount for Winner ₹120/- for Seller ₹10/- </h3>
