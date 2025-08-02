@@ -71,7 +71,7 @@ $(document).ready(function () {
   // Section 2 Generator (5 digits, 10 numbers)
   $("#generateSection2").click(function () {
     usedNumbers.section2.clear(); // Clear previous numbers
-    const numbers = generateUniqueNumbers("section2", 15, 5);
+    const numbers = generateUniqueNumbers("section2", 10, 5);
 
     $(".section2-input").each(function (index) {
       if (index < numbers.length) {
@@ -83,7 +83,7 @@ $(document).ready(function () {
   // Section 3 Generator (4 digits, 10 numbers)
   $("#generateSection3").click(function () {
     usedNumbers.section3.clear(); // Clear previous numbers
-    const numbers = generateUniqueNumbers("section3", 20, 4);
+    const numbers = generateUniqueNumbers("section3", 15, 4);
 
     $(".section3-input").each(function (index) {
       if (index < numbers.length) {
@@ -95,7 +95,7 @@ $(document).ready(function () {
   // Section 4 Generator (4 digits, 10 numbers)
   $("#generateSection4").click(function () {
     usedNumbers.section4.clear(); // Clear previous numbers
-    const numbers = generateUniqueNumbers("section4", 20, 4);
+    const numbers = generateUniqueNumbers("section4", 15, 4);
 
     $(".section4-input").each(function (index) {
       if (index < numbers.length) {

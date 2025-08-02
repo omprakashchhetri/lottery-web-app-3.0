@@ -174,6 +174,7 @@
         margin: 0;
         line-height: 0.5;
         padding: 0;
+        text-align: center;
     }
 
     .two-column {
@@ -223,23 +224,23 @@
         border-radius: 14px;
         margin-top: 10px;
         position: relative;
-        min-height: 20mm;
+        min-height: 16mm;
     }
 
     .section-inner.green {
-        min-height: 26mm;
+        min-height: 21mm;
     }
 
     .section-img {
         position: absolute;
-        top: 2px;
+        top: -5px;
         left: -5px;
         z-index: 10;
         width: 74mm;
     }
 
     .green .section-img {
-        top: 23px;
+        top: 8px;
     }
 
     .section-img img {
@@ -254,7 +255,7 @@
         position: absolute;
         background-color: #FAAF3A;
         height: 14mm;
-        top: 10px;
+        top: 2px;
         left: 60px;
         z-index: 5;
         width: 45mm;
@@ -266,20 +267,20 @@
         border-left: 0px solid transparent;
         border-right: 15px solid transparent;
         height: 0;
-        top: 14px;
+        top: 6px;
         left: 60px;
         z-index: 5;
         width: 55mm;
     }
 
     .green .section-img-block {
-        top: 24px;
+        top: 10px;
     }
 
     .green .section-img-block-main {
         border-bottom: 13mm solid #d51717;
         width: 55mm;
-        top: 28px;
+        top: 14px;
     }
 
     .green .section-img-block-main.blue-col {
@@ -294,14 +295,14 @@
         float: right;
         width: calc(100% - 70mm);
         line-height: 0.9;
-        margin-top: -2.3mm;
+        margin-top: -1.3mm;
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .green .numbers-wrapper {
-        margin-top: -2.5mm;
+        margin-top: -1.5mm;
     }
 
     .draw-number {
@@ -315,7 +316,7 @@
 
     .ad-image {
         width: 100%;
-        height: 47mm;
+        height: 61mm;
     }
 
     .fifth-price-header {
@@ -342,7 +343,7 @@
         position: absolute;
         color: #ffff1fff;
         font-family: "Arial Black", sans-serif;
-        font-size: 25pt;
+        font-size: 27pt;
         left: 50%;
         translate: -50%;
         top: -1mm;
@@ -466,8 +467,8 @@
         position: absolute;
         color: #fff;
         right: 26mm;
-        top: 1mm;
-        font-size: 31px;
+        top: 3mm;
+        font-size: 33px;
     }
 
     /* Print Styles */
@@ -561,7 +562,7 @@
         }
 
         .section-inner.green {
-            min-height: 16mm;
+            min-height: 21mm;
         }
 
         .two-column {
@@ -692,7 +693,7 @@
         $date_full = $lotteryData['data']['draw_date_full'];
         $time = $lotteryData['data']['draw_time'];
         $formattedTime = strtolower(str_replace(' ', '', $time));
-        $onePmCount = $lotteryResultCount[$formattedTime] + 55;
+        $onePmCount = $lotteryResultCount[$formattedTime] + 50;
     ?>
     <button id="downloadBtn" onclick="downloadBoth()">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down"
@@ -720,7 +721,9 @@
     <div class="page">
         <!-- Header Image Section -->
         <div class="header-wrapper">
-            <span class="lottery-label">BUMPER <?=strtoupper(date('l'))?> WEEKLY LOTTERY</span>
+            <span class="lottery-label">BUMPER
+                <?= strtoupper(date('l', DateTime::createFromFormat('d/m/Y', $date_full)->getTimestamp())) ?>
+                WEEKLY LOTTERY</span>
             <?php if($time == '2 PM'){ ?>
             <span class="first-number"><?=$first?></span>
             <span class="draw-number-count"><?=$onePmCount?></span>

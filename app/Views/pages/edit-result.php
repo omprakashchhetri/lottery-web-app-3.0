@@ -95,9 +95,9 @@
 
             $sections = [
                 'section1' => ['label' => '1st', 'count' => 1, 'max'=>9],
-                'section2' => ['label' => '2nd', 'count' => 15, 'max'=>5],
-                'section3' => ['label' => '3rd', 'count' => 20, 'max'=>4],
-                'section4' => ['label' => '4th', 'count' => 20, 'max'=>4],
+                'section2' => ['label' => '2nd', 'count' => 10, 'max'=>5],
+                'section3' => ['label' => '3rd', 'count' => 15, 'max'=>4],
+                'section4' => ['label' => '4th', 'count' => 15, 'max'=>4],
                 'section5' => ['label' => '5th', 'count' => 100, 'max'=>4],
             ];
 

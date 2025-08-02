@@ -160,7 +160,7 @@ $(document).on('click', '.delete-result-btn', function() {
         success: function(response) {
             if (response.status === 'success') {
                 alert(response.message);
-                location.reload(); // or remove DOM element manually
+                window.location.href = '<?=base_url()?>' + 'admin/admin-dashboard';
             } else {
                 alert('Failed: ' + response.message);
             }
