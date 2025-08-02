@@ -19,7 +19,6 @@ $routes->post('save-lottery-results', 'LotteryController::saveLotteryResults');
 
 $routes->post('save-lottery-files', 'LotteryController::updateLotteryResultFiles');
 $routes->post('update-toggle-status', 'LotteryController::updateToggleStatus');
-$routes->get('admin-transaction/create-transaction/session', 'Transaction::create_transaction');
 
 $routes->group('admin', function ($routes) {
 

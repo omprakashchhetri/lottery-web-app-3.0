@@ -133,7 +133,7 @@
             </div>
             <div class="para-wrapper">
                 <p class="draw-terms-para para-color font-body">
-                    One times a day, a First Prize of Rs. 75 Lakhs is up for grabs in
+                    One times a day, a First Prize of Rs. 1 Crore is up for grabs in
                     the <?= ucwords(strtolower(STATENAME)); ?> Future Daily Lottery. Every day of the week has a
                     distinct name for the draws. For instance, the draws on Sunday
                     are referred to as Future Brook, the draws on Monday as Future

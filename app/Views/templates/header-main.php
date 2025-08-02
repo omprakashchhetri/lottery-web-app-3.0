@@ -98,18 +98,6 @@
                             Add Result
                         </a>
                     </li>
-                    <!-- <li class="no-sub">
-                        <a href="<?=base_url('admin/add-lottery')?>">
-                            <i class="iconoir-google-docs"></i>
-                            Add Ticket
-                        </a>
-                    </li> -->
-                    <li class="no-sub">
-                        <a href="<?=base_url('admin-transaction/create-transaction/session')?>">
-                            <i class="iconoir-cash"></i>
-                            Add Transaction
-                        </a>
-                    </li>
                 </ul>
             </div>
 

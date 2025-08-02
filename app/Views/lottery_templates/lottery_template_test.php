@@ -807,7 +807,7 @@
                 </div>
             </div>
             <div class="ad-image-wrapper">
-                <span class="days-left-count"><?=$daysLeft?></span>
+                <!-- <span class="days-left-count"><?=$daysLeft?></span> -->
                 <img class="ad-image" src="<?=base_url('print-outs-09621/ad-section-678145874jkncvnq41.jpg')?>" alt="">
             </div>
             <h3 class="fifth-price-header">5th Prize Amount for Winner ₹120/- for Seller ₹10/- </h3>
